@@ -6,7 +6,7 @@ public class Main {
         System.out.println();
     }
 
-    public static void bubbleSort(int[] array) {
+    public static void bubbleSort2(int[] array) {
         boolean is_sorted = false;
         int i = array.length - 1;
         while (!is_sorted) {
@@ -25,7 +25,7 @@ public class Main {
 
     public static void main(String[] args) {
         int[] array = { 5, 4, 2, 3, 1 };
-        bubbleSort(array);
+        bubbleSort2(array);
         printlnArray(array);
     }
 }
