@@ -31,6 +31,16 @@ public class Group {
     }
 
     Student randomNotMissingStudent() {
+        boolean allStudentsAreProcessed = true;
+        for (Student student : students) {
+            if (student.isPresent == null) {
+                allStudentsAreProcessed = false;
+                break;
+            }
+        }
+        if (allStudentsAreProcessed) {
+            return null;
+        }
         Random rand = new Random();
         Student student;
         do {
